@@ -43,7 +43,7 @@ SEE ALSO
 				<h2>Recent Uploaded:<h2>
 						<ul>
 							{% for filename in files | split(pat=" ") %}
-							<li><a href="/{{filename}}">{{filename}}</a></li>
+							<li><a href="/p/{{filename}}">{{filename}}</a></li>
 							{% endfor %}
 						</ul>
 			</div>
