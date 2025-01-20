@@ -7,6 +7,7 @@ const upload_card = document.querySelector('#upload_card');
 const textarea = document.querySelector('textarea');
 const select = document.querySelector('select');
 const submitButton = document.querySelector('button[type="submit"]');
+const recent_uplaoded = document.querySelector("#recent_uplaoded")
 
 window.onload = () => {
     if (localStorage["forkText"] !== null) {
@@ -21,6 +22,7 @@ const onInput = () => {
     submitButton.classList.toggle('hidden', !textarea.value);
     select.classList.toggle('hidden', !textarea.value);
     fileUpload.classList.toggle('hidden', textarea.value);
+	 recent_uplaoded.classList.toggle('hidden', textarea.value);
 }
 textarea.addEventListener('input', onInput);
 onInput();
